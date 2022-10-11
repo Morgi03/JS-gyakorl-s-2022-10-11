@@ -9,6 +9,13 @@ toString(){
 }
 
 
+let labakbolSzazlabuk = function (tomb) {
+    let CentipedeArray =  [];
+    tomb.forEach((e) =>{
+        CentipedeArray.push(new Szazlabu(parseInt(e)));
+    });
+    return CentipedeArray;
+}
 
 
 
@@ -33,6 +40,12 @@ document.getElementById('otteloszt').addEventListener('click', () => {
 
 document.getElementById('addToArray').addEventListener('click',()=>{
 tomb.push(document.getElementById('addnum').value); 
+});
+
+
+// Százlábú teszt
+labakbolSzazlabuk(tomb).forEach((e)=>{
+    console.log(e.toString());
 });
 
 /*
