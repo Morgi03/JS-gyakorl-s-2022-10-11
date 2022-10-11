@@ -14,11 +14,26 @@ tomb.forEach((e) => {
     console.log(e);
 });
 
+document.getElementById('otteloszt').addEventListener('click', () => {
+    let ottelOszthato = tomb.filter(e => e % 5 == 0);
+    console.log(ottelOszthato);
+    
+    ottelOszthato.forEach((e) => {
+        console.log(e);
+    });
+});
+
+
+
+/*
+// 1. feladat része
+
 let ottelOszthato = tomb.filter(e => e % 5 == 0);
 console.log(ottelOszthato);
 
 ottelOszthato.forEach((e) => {
     console.log(e);
 });
+*/
 
 });
