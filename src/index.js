@@ -3,14 +3,16 @@ class Szazlabu {
 constructor(labakSzama) {
 this.#labakSzama = labakSzama;
 }
+
+// Tiszta
 toString(){
     return this.#labakSzama+' lábú százlábú';
 }
 }
 
-
+// Tiszta
 let labakbolSzazlabuk = function (tomb) {
-   return tomb.map(szam => new Szazlabu(szam));
+   return tomb.map(/* Tiszta*/ szam => new Szazlabu(szam));
 }
 
 
