@@ -1,9 +1,16 @@
+class Szazlabu {
+#labakSzama;
+constructor(labakSzama) {
+this.#labakSzama = labakSzama;
+}
+toString(){
+    return this.#labakSzama+' lábú százlábú';
+}
+}
 
 
 
-function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-  }
+
 
 document.addEventListener('DOMContentLoaded',() => {
 let tomb = [];
@@ -24,6 +31,9 @@ document.getElementById('otteloszt').addEventListener('click', () => {
 });
 
 
+document.getElementById('addToArray').addEventListener('click',()=>{
+tomb.push(document.getElementById('addnum').value); 
+});
 
 /*
 // 1. feladat része
